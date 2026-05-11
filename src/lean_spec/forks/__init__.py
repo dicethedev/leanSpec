@@ -1,5 +1,7 @@
 """Multi-fork dispatch layer for leanSpec consensus specification."""
 
+from . import capabilities
+from .capabilities import SigScheme
 from .lstar.containers import (
     AggregatedAttestation,
     Attestation,
@@ -48,6 +50,7 @@ __all__ = [
     "ForkRegistry",
     "LstarSpec",
     "LstarStore",
+    "SigScheme",
     "SignedAggregatedAttestation",
     "SignedAttestation",
     "SignedBlock",
@@ -57,4 +60,5 @@ __all__ = [
     "Store",
     "Validator",
     "Validators",
+    "capabilities",
 ]
